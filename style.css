@@ -1,0 +1,159 @@
+/* Prepend to style.css to reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Changed font */
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Added a light background color */
+    color: #333; /* Default text color */
+}
+
+.container { /* Add a container for centered content */
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+header {
+    background: #35424a; /* Darker blue/grey */
+    color: #ffffff;
+    padding: 1.5rem 0; /* Increased padding */
+    text-align: center;
+    border-bottom: #e8491d 3px solid; /* Accent color border */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Larger heading */
+}
+
+nav {
+    margin-top: 10px; /* Space between title and nav */
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center; /* Center nav items */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #e8491d; /* Accent color on hover */
+}
+
+main {
+    padding: 20px 0; /* Adjusted padding */
+}
+
+section {
+    background: #ffffff; /* White background for sections */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners for sections */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow for sections */
+}
+
+section h2 {
+    color: #35424a; /* Darker heading color for sections */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e8491d; /* Accent color underline */
+    padding-bottom: 5px;
+}
+
+section h3 {
+    color: #35424a;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-position: inside; /* Indent list markers */
+    padding-left: 20px; /* Add some padding to lists */
+}
+
+ul li {
+    margin-bottom: 8px; /* Space out list items */
+}
+
+footer {
+    text-align: center;
+    padding: 20px; /* Increased padding */
+    background: #35424a; /* Consistent with header */
+    color: #ffffff;
+    margin-top: 20px; /* Space above footer */
+}
+
+/* Form Styles - ensure these are present and correct */
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px; /* Increased padding */
+    border: 1px solid #ddd; /* Lighter border */
+    border-radius: 4px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #e8491d; /* Accent color for button */
+    color: white;
+    padding: 10px 20px; /* Adjusted padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+form button:hover {
+    background-color: #35424a; /* Darker color on hover */
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .container {
+        width: 95%;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        width: calc(100% - 20px); /* Adjust for padding */
+    }
+}
